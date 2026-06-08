@@ -5,8 +5,21 @@
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
 
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redireciona o subdomínio do Netlify para o domínio principal (evita conteúdo duplicado no Google)
+[[redirects]]
+  from = "https://chipper-croissant-2380ee.netlify.app/*"
+  to = "https://gasnetwork.com.br/:splat"
+  status = 301
+  force = true

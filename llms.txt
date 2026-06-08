@@ -8,6 +8,15 @@
 - Endereço: Rua Ascânio, 263, Chácara Mafalda, São Paulo - SP
 - Instagram: https://www.instagram.com/_gasnetwork/
 
+## Empresa e credenciais
+- Razão social: Gás Network Serviços e Instalações Ltda
+- CNPJ: 46.701.957/0001-66
+- Responsável técnico: Eng. Matheus Henrique dos Santos — CREA 5071237552
+- Empresa homologada Comgás
+- Empresa certificada ABRINSTAL no padrão BIP (Boas Instalações Prediais)
+- Atende gás natural (GN) e GLP, com emissão de laudo técnico e ART
+- Normas técnicas seguidas: ABNT NBR 13103 e ABNT NBR 15526
+
 ## Principais serviços
 - Laudo técnico de gás e ART: https://gasnetwork.com.br/servicos/laudo-tecnico-de-instalacao-de-gas.html
 - Teste de estanqueidade: https://gasnetwork.com.br/servicos/teste-de-estanqueidade-de-gas.html
@@ -24,3 +33,11 @@
 - Atuação no padrão ABRINSTAL BIP (Boas Instalações Prediais)
 - Atende GN e GLP, com emissão de laudo e ART
 - Atendimento em São Paulo, Grande São Paulo, interior e litoral
+
+## Áreas de atendimento
+- São Paulo capital (todas as zonas), Grande São Paulo, ABC Paulista, interior e litoral de São Paulo
+
+## Mais informações
+- Todos os serviços: https://gasnetwork.com.br/servicos.html
+- Blog técnico: https://gasnetwork.com.br/blog.html
+- Sobre a empresa: https://gasnetwork.com.br/sobre.html
