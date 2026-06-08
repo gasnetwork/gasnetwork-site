@@ -426,10 +426,10 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 #gnnav .gnm--l0>li>a{display:flex;align-items:center;gap:5px;padding:10px 13px;font-family:var(--font-txt);font-weight:600;font-size:14.5px;color:var(--ink);text-decoration:none;border-radius:8px;white-space:nowrap}
 #gnnav .gnm--l0>li>a:hover{color:var(--azul);background:var(--bg)}
 #gnnav .gnm li{position:relative}
-#gnnav .gnm ul{display:none;position:absolute;min-width:248px;max-width:300px;background:#fff;border:1px solid var(--borda);border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.16);padding:6px;z-index:120;max-height:76vh;overflow-y:auto}
+#gnnav .gnm ul{display:none;position:absolute;min-width:248px;max-width:300px;background:#fff;border:1px solid var(--borda);border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.16);padding:6px;z-index:120}
 #gnnav .gnm--l0>li:hover>ul{display:block;top:100%;left:0}
 #gnnav .gnm li.has-sub:hover>ul{display:block}
-#gnnav .gnm ul ul{top:-6px;left:100%}
+#gnnav .gnm ul ul{top:-6px;left:100%;max-height:80vh;overflow-y:auto;overflow-x:hidden}
 #gnnav .gnm ul li>a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 11px;font-family:var(--font-txt);font-weight:500;font-size:13.5px;line-height:1.25;color:var(--ink);text-decoration:none;border-radius:8px}
 #gnnav .gnm ul li>a:hover{background:var(--bg);color:var(--azul)}
 #gnnav .gnm--l0>li>a .gnm-arrow{display:none}
