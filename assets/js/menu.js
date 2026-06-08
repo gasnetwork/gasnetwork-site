@@ -38,3 +38,42 @@ window.GN_MENU=[{"t": "Início", "u": "index.html"}, {"t": "Serviços", "u": "se
     });
   }
 })();
+
+/* Posicionamento robusto dos submenus no desktop (evita corte e itens sumindo) */
+(function(){
+  var nav=document.getElementById('gnnav');
+  if(!nav) return;
+  function isDesk(){ return window.innerWidth>1100; }
+  nav.querySelectorAll('li.has-sub > ul').forEach(function(sub){
+    var li=sub.parentNode;
+    var m=(sub.className||'').match(/gnm--l(\d+)/);
+    var lvl=m?parseInt(m[1],10):1;
+    if(lvl<2) return; /* só os submenus laterais (2o nível) */
+    li.addEventListener('mouseenter', function(){
+      if(!isDesk()) return;
+      var r=li.getBoundingClientRect();
+      sub.style.position='fixed';
+      sub.style.display='block';
+      sub.style.visibility='hidden';
+      sub.style.maxHeight='none';
+      sub.style.top='0px'; sub.style.left='0px';
+      var w=sub.offsetWidth, h=sub.offsetHeight;
+      var left=r.right-2;
+      if(left+w>window.innerWidth-8){ left=Math.max(8, r.left-w+2); }
+      var top=r.top-6;
+      var mh=Math.min(h, window.innerHeight-16);
+      if(top+mh>window.innerHeight-8){ top=Math.max(8, window.innerHeight-8-mh); }
+      sub.style.left=left+'px';
+      sub.style.top=top+'px';
+      sub.style.maxHeight=(window.innerHeight-top-12)+'px';
+      sub.style.overflowY='auto';
+      sub.style.overflowX='hidden';
+      sub.style.zIndex='200';
+      sub.style.visibility='visible';
+    });
+    li.addEventListener('mouseleave', function(){
+      sub.style.position=''; sub.style.display=''; sub.style.left=''; sub.style.top='';
+      sub.style.maxHeight=''; sub.style.visibility=''; sub.style.overflowY=''; sub.style.overflowX=''; sub.style.zIndex='';
+    });
+  });
+})();

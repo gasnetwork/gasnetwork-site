@@ -446,3 +446,6 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .gnm--mobile li.open>ul{display:block}
 .gnm--mobile ul a{padding-left:30px;font-weight:500;font-size:14px}
 .gnm--mobile ul ul a{padding-left:46px;font-size:13.5px}
+
+/* 1o nivel do menu rolavel (categorias) */
+#gnnav .gnm--l1{max-height:82vh;overflow-y:auto}
