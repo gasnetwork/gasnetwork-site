@@ -418,3 +418,31 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .related--cidades li{margin:0}
 .related--cidades a{font-size:13.5px}
 @media(max-width:760px){.related--cidades ul{grid-template-columns:1fr 1fr}}
+
+/* ===== Menu em cascata (gnm) — desktop ===== */
+#gnnav .gnm{list-style:none;margin:0;padding:0}
+#gnnav>ul.gnm--l0{display:flex;align-items:center;gap:2px;flex-wrap:nowrap}
+#gnnav .gnm--l0>li{position:relative}
+#gnnav .gnm--l0>li>a{display:flex;align-items:center;gap:5px;padding:10px 13px;font-family:var(--font-txt);font-weight:600;font-size:14.5px;color:var(--ink);text-decoration:none;border-radius:8px;white-space:nowrap}
+#gnnav .gnm--l0>li>a:hover{color:var(--azul);background:var(--bg)}
+#gnnav .gnm li{position:relative}
+#gnnav .gnm ul{display:none;position:absolute;min-width:248px;max-width:300px;background:#fff;border:1px solid var(--borda);border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.16);padding:6px;z-index:120;max-height:76vh;overflow-y:auto}
+#gnnav .gnm--l0>li:hover>ul{display:block;top:100%;left:0}
+#gnnav .gnm li.has-sub:hover>ul{display:block}
+#gnnav .gnm ul ul{top:-6px;left:100%}
+#gnnav .gnm ul li>a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 11px;font-family:var(--font-txt);font-weight:500;font-size:13.5px;line-height:1.25;color:var(--ink);text-decoration:none;border-radius:8px}
+#gnnav .gnm ul li>a:hover{background:var(--bg);color:var(--azul)}
+#gnnav .gnm--l0>li>a .gnm-arrow{display:none}
+#gnnav .gnm-arrow{opacity:.45;font-size:16px;font-weight:700}
+@media(max-width:1100px){#gnnav{display:none}}
+
+/* ===== Menu mobile (gnm--mobile) ===== */
+.gnm--mobile,.gnm--mobile ul{list-style:none;margin:0;padding:0}
+.gnm--mobile a{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;font-family:var(--font-txt);font-weight:600;font-size:15px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--borda)}
+.gnm--mobile .gnm-arrow{display:none}
+.gnm--mobile li.has-sub>a::after{content:"+";font-size:18px;opacity:.6}
+.gnm--mobile li.open>a::after{content:"–"}
+.gnm--mobile ul{display:none;background:var(--bg)}
+.gnm--mobile li.open>ul{display:block}
+.gnm--mobile ul a{padding-left:30px;font-weight:500;font-size:14px}
+.gnm--mobile ul ul a{padding-left:46px;font-size:13.5px}
